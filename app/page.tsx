@@ -1,16 +1,7 @@
-import Link from 'next/link'
 export default function Page(){
     return (
         <div>
-            <div className="flex-row hidden grid grid-cols-2 bg-zinc-800 text-white md:flex">
-                <div className="flex-grow px-8 py-8">Carlos Herrera</div>
-                <div className= "flex-none flex-row right-full place-content-end">
-                    <Link className="float-right px-8 py-8 hover:bg-blue-100" href="About">About</Link>
-                    <a className="float-right px-8 py-8 hover:bg-blue-100">Projects</a>
-                    <a className="float-right  px-8 py-8 hover:bg-blue-100">Experience</a>
-                    <a className="float-right  px-8 py-8 hover:bg-blue-100">Contact Me</a>
-                </div>
-            </div>
+            
             <div className="hidden h-1/2 grid-cols-2 bg-gray-700 p-10 text-white md:grid">
             <div className="px-5 py-10">
                 This is text
