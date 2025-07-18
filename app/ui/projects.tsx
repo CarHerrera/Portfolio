@@ -1,10 +1,16 @@
 import Link from 'next/link'
 const projects = [{
     projName: "Drink and Food Recipe Site",
-    info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac eros fermentum, tristique leo sit amet, blandit nunc. Etiam ac justo et nunc cursus malesuada et sit amet urna. Vestibulum hendrerit semper justo, ut auctor enim viverra non. Sed quis ex consequat, fermentum ipsum in, interdum lacus. Nam ornare viverra lorem, nec mattis felis faucibus sed. Suspendisse condimentum molestie nunc, vitae dapibus elit facilisis vitae. Praesent aliquet tristique sem, id gravida est eleifend ut. Cras aliquet, dui eget vestibulum varius, dui metus tempor turpis, a scelerisque felis magna vel diam. Nullam at fringilla ex, sollicitudin vulputate nisl. Aenean id lacus lacinia, dictum lorem quis, molestie lorem. Nullam tortor mi, suscipit quis aliquet consectetur, laoreet sed urna. Pellentesque eu odio bibendum, molestie arcu in, aliquet sapien. Quisque sed lobortis metus. Nullam et tempor lectus, quis viverra magna. Maecenas iaculis sed erat sed faucibus. Nulla eu odio velit. ",
+    info: "This was one my final project for my Javascript and Web Applications course. The project was open ended but it must use at least one GET and POST request.\
+    I decided to make a recipe book site for both cocktails and food recipes. It would generate recipes based on the query by the user. For example if they wanted only\
+    drinks with rum, it would make a call to the cocktaildb and popualte results. I also allowed users to enter some ingredients that they had and it would also populate a table\
+    with recipes that could be made from those ingredients.",
     date: "",
-    links:"",
-    skills:["Created and hosted a website using Node.js", "Used API calls to generate drinks and recipes for the user based on inputted filters","Used mongodb to store information about the user."],
+    github:"https://github.com/CarHerrera/CMSC335Final",
+    skills:["Created and hosted a website using Node.js", 
+      "Used API calls to generate drinks and recipes for the user based on inputted filters",
+      "Used mongodb to store information about the user.",
+      "Used expressjs as the framework"],
     img:"/cocktail.png",
     height: 50,
     width: 60,
@@ -12,10 +18,16 @@ const projects = [{
   },
 {
     projName: "Health App Project",
-    info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac eros fermentum, tristique leo sit amet, blandit nunc. Etiam ac justo et nunc cursus malesuada et sit amet urna. Vestibulum hendrerit semper justo, ut auctor enim viverra non. Sed quis ex consequat, fermentum ipsum in, interdum lacus. Nam ornare viverra lorem, nec mattis felis faucibus sed. Suspendisse condimentum molestie nunc, vitae dapibus elit facilisis vitae. Praesent aliquet tristique sem, id gravida est eleifend ut. Cras aliquet, dui eget vestibulum varius, dui metus tempor turpis, a scelerisque felis magna vel diam. Nullam at fringilla ex, sollicitudin vulputate nisl. Aenean id lacus lacinia, dictum lorem quis, molestie lorem. Nullam tortor mi, suscipit quis aliquet consectetur, laoreet sed urna. Pellentesque eu odio bibendum, molestie arcu in, aliquet sapien. Quisque sed lobortis metus. Nullam et tempor lectus, quis viverra magna. Maecenas iaculis sed erat sed faucibus. Nulla eu odio velit. ",
+    info: "This was a project that was created in a Human-Computer Interaction Course.\
+     This project was different to some of my others as we were not focusing on creating a functional app. Instead, the professor wanted to make an app that prioritized the user and their experiences.\
+     An added constraint was that it was meant to be designed on a 640x960 application and we could not use anything outside of the base HTML, CSS, and JS.\
+     With a group of 3 other classmates, we created this simulated mobile app and utilized everything we learned from class to make the app as appealing as possible. ",
     date: "",
-    links:"",
-    skills:[""],
+    github:"https://github.com/CarHerrera/434-HealthApp",
+    skills:["Practiced using Github",
+      "Experience focusing on a good user experience",
+      "Practice HTML, CSS, JS"
+    ],
     img:"null",
     height: 50,
     width: 50,
@@ -23,31 +35,59 @@ const projects = [{
   }, 
   {
     projName: "Discord Bot",
-    info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac eros fermentum, tristique leo sit amet, blandit nunc. Etiam ac justo et nunc cursus malesuada et sit amet urna. Vestibulum hendrerit semper justo, ut auctor enim viverra non. Sed quis ex consequat, fermentum ipsum in, interdum lacus. Nam ornare viverra lorem, nec mattis felis faucibus sed. Suspendisse condimentum molestie nunc, vitae dapibus elit facilisis vitae. Praesent aliquet tristique sem, id gravida est eleifend ut. Cras aliquet, dui eget vestibulum varius, dui metus tempor turpis, a scelerisque felis magna vel diam. Nullam at fringilla ex, sollicitudin vulputate nisl. Aenean id lacus lacinia, dictum lorem quis, molestie lorem. Nullam tortor mi, suscipit quis aliquet consectetur, laoreet sed urna. Pellentesque eu odio bibendum, molestie arcu in, aliquet sapien. Quisque sed lobortis metus. Nullam et tempor lectus, quis viverra magna. Maecenas iaculis sed erat sed faucibus. Nulla eu odio velit. ",
+    info: "This was an application that I had created while I was at Montgomery College. I was looking for opportunities to practice and develop some of my python skills and found a library\
+    that gave me the tools to create a discord bot. After intializing the bot and adding some base commands, I started to add some custom commands. I added the ability for the bot to randomly\
+    respond to user messages, allowed it to play soundbytes, and created a social currency system that correlated with the user activity on the server.",
     date: "",
-    links:"",
-    skills:[""],
-    img:"null",
+    github:"https://github.com/CarHerrera/DiscordJesusBot",
+    skills:[
+      "Made API calls to discord via the discord.py library",
+      "Made a social currency that was attached to each user in the server",
+      "Practiced my python skills"
+    ],
+    img:"/disc.png",
     height: 50,
     width: 50,
     id: 2
   },
   {
     projName: "Co$t4Equality",
-    info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac eros fermentum, tristique leo sit amet, blandit nunc. Etiam ac justo et nunc cursus malesuada et sit amet urna. Vestibulum hendrerit semper justo, ut auctor enim viverra non. Sed quis ex consequat, fermentum ipsum in, interdum lacus. Nam ornare viverra lorem, nec mattis felis faucibus sed. Suspendisse condimentum molestie nunc, vitae dapibus elit facilisis vitae. Praesent aliquet tristique sem, id gravida est eleifend ut. Cras aliquet, dui eget vestibulum varius, dui metus tempor turpis, a scelerisque felis magna vel diam. Nullam at fringilla ex, sollicitudin vulputate nisl. Aenean id lacus lacinia, dictum lorem quis, molestie lorem. Nullam tortor mi, suscipit quis aliquet consectetur, laoreet sed urna. Pellentesque eu odio bibendum, molestie arcu in, aliquet sapien. Quisque sed lobortis metus. Nullam et tempor lectus, quis viverra magna. Maecenas iaculis sed erat sed faucibus. Nulla eu odio velit. ",
+    info: "This was a website that I created when I was working at iStrategyLabs. This was a summer internship that I secured and our goal was to create a website that talked about some\
+    problems that we felt passionate about at the time. There were 3 of us working on the webpage and each of us were focused on different aspects of the project. I was the main person that\
+    worked on the front end portions and the backend portions. This project was the project that made me want to pursue computer science as career while in Highschool.",
     date: "",
-    links:"",
-    skills:[""],
+    github:"",
+    skills:[
+      "Created a website using HTML, CSS, JS",
+      "Collaborated with other interns (Teamwork)",
+      "Django web Framework",
+      "Project Planning"
+    ],
     img:"null",
     height: 50,
     width: 50,
     id: 3
   },
+  {
+    projName: "My Portfolio",
+    info: "This website! I wanted to make a portfolio with a framework that had never been talked about in any of my classes. I landed on NextJs as it allowed me to practice\
+    my typescript, and gave me the opportunity to work with other frameworks like TailwindCSS and React.",
+    date: "",
+    github:"https://github.com/CarHerrera/Portfolio",
+    skills:[
+      "Next js Framework",
+      "React components",
+      "Typescript"],
+    img:"null",
+    height: 50,
+    width: 50,
+    id:4,
+  }
 ];
 
 function BulletList({list}:{list:String[]}){
   const listItems = list.map(item =>
-    <li className="pl-5" key={list.indexOf(item)}>{item}</li>
+    <li className="pl-5 text-lg0" key={list.indexOf(item)}>{item}</li>
   )
   return (<ul className="list-disc mt-5 mb-10 pl-5">{listItems}</ul>);
 }
@@ -58,17 +98,17 @@ export default function Projects() {
     <div key ={project.id} className="bg-gray-500 m-8 p-5 rounded-lg">
       <div className="flex">
         <img className="inline-block" src={project.img} height={project.height} width={project.width}></img>
-        <div><h2 className="text-2xl m-4">{project.projName}</h2></div>
+        <div><h2 className="text-3xl m-4">{project.projName}</h2></div>
       </div>
       <br/>
       <p className="text-xl">{project.info}</p>
       <br/>
       
-        <p>Skills Learned</p>
+        <p className="text-lg">Skills Learned</p>
         <BulletList list={project.skills}/>
       
       <div className="flex">
-        <a className="ml-4">Github</a>
+        <a className="ml-4" href={project.github}>Github</a>
         <p className="flex-grow"></p>
         <a className="mr-4">Live site</a>
       </div>
