@@ -1,10 +1,11 @@
-import Link from 'next/link'
-  function handleClick() {
-    alert('You clicked me!');
-  }
+'use client'
+import Link from 'next/link';
+import { useState } from 'react';
+import { createPortal } from 'react-dom';
+import Modal from './modal'
 export default function Nav() {
   // ...
-
+  const [showModal, setShowModal] = useState(false);
   return (
     <nav>
         <div className="flex-row hidden grid grid-cols-2 bg-zinc-800 text-white md:flex">
@@ -17,7 +18,14 @@ export default function Nav() {
                 <Link className="float-right px-8 py-8 hover:bg-blue-100" href="about">About</Link>
                 <a className="float-right px-8 py-8 hover:bg-blue-100" href="projects">Projects</a>
                 <a className="float-right  px-8 py-8 hover:bg-blue-100" href="experience">Experience</a>
-                <button className="float-right  px-8 py-8 hover:bg-blue-100" onClick={handleClick}>Contact Me</button>
+                <a className="float-right  px-8 py-8 hover:bg-blue-100" onClick={() => setShowModal(true)}>Contact Me</a>
+                {showModal && createPortal(
+                    // onClick={() => setShowModal(false)}
+                    <div className="w-screen h-screen backdrop-blur-lg top-0 fixed"  >
+                        <Modal onClose={() => setShowModal(false)} />
+                    </div>,
+                  document.body
+                  )}
             </div>
         </div>
     </nav>
