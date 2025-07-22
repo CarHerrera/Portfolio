@@ -5,13 +5,15 @@ export default function Home() {
     <div>
         <div className="hidden h-1/2 grid-cols-2 bg-gray-700 p-10 text-white md:grid">
             <div className="px-5 py-10">
-                This is text
-                <br />
-                <br />
-                This is more text describing me I guess and some of my specialties
-                <br />
-                <br />
-                <div className="flex flex-row">Wooooooooooooooooooooooooooow</div>
+                  <p className="text-4xl">Projects!</p>
+                  <br></br>
+                  <br></br>
+                  <p className="text-3xl">This page showcases some of the work that I am most proud of. 
+                    Each of these projects came with their own set of challenges and I am proud for overcoming each and every one of them. These projects helped me hone some of my skills and they made a stronger and more confident developer.
+                    <br></br>
+                    <br></br>
+                    Feel free to take a look at each one!
+                    </p>
             </div>
             <div>
                 <img className="rounded-full mx-auto px-5 py-10" src={"/me.png"} />

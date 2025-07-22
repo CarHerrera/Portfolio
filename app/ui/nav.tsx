@@ -15,9 +15,6 @@ export default function Nav() {
             </div></Link>
             <div className="flex-grow"></div>
             <div className= "flex-none flex-row right-full place-content-end">
-                <Link className="float-right px-8 py-8 hover:bg-blue-100" href="about">About</Link>
-                <a className="float-right px-8 py-8 hover:bg-blue-100" href="projects">Projects</a>
-                <a className="float-right  px-8 py-8 hover:bg-blue-100" href="experience">Experience</a>
                 <a className="float-right  px-8 py-8 hover:bg-blue-100" onClick={() => setShowModal(true)}>Contact Me</a>
                 {showModal && createPortal(
                     // onClick={() => setShowModal(false)}
@@ -26,6 +23,8 @@ export default function Nav() {
                     </div>,
                   document.body
                   )}
+                  <a className="float-right px-8 py-8 hover:bg-blue-100" href="projects">Projects</a>
+                  <a className="float-right  px-8 py-8 hover:bg-blue-100" href="experience">Experience</a>
             </div>
         </div>
     </nav>

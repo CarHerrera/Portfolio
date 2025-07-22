@@ -85,13 +85,24 @@ export default function Page(){
             
             <div className="hidden h-1/2 grid-cols-2 bg-gray-700 p-10 text-white md:grid">
             <div className="px-5 py-10">
-                This is text
+
                 <br />
                 <br />
-                This is more text describing me I guess and some of my specialties
+                <p className="text-4xl m-5">Hi! I am Carlos Herrera.
+                </p>
                 <br />
                 <br />
-                <div className="flex flex-row">Wooooooooooooooooooooooooooow</div>
+                <div className="mr-4">
+                    <p className="text-xl"> I am a graduate of the University of Maryland with a strong interest in full-stack devlopment. I have experience working front-end frameworks like react, and have experiencce working with back-end technology such as Node.js, Express, and SQL/NOSQL databases.
+                        I am looking for opportunities to improve my software devlopment skills and contribute to collaborative engineering teams. 
+                    
+
+                    <br></br>
+                    <br></br>
+                    This is my portfolio site! I will be adding some of the proejcts that I've worked on throughout my academic career.
+                        Feel free to look through it and check back occasionally as I update it with new work.
+                    </p>
+                </div>
             </div>
             <div>
                 <img className="rounded-full mx-auto px-5 py-10" src={"/me.png"} />
