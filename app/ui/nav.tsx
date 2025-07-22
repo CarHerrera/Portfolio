@@ -21,7 +21,7 @@ export default function Nav() {
                 <a className="float-right  px-8 py-8 hover:bg-blue-100" onClick={() => setShowModal(true)}>Contact Me</a>
                 {showModal && createPortal(
                     // onClick={() => setShowModal(false)}
-                    <div className="w-screen h-screen backdrop-blur-lg top-0 fixed"  >
+                    <div className="w-screen h-screen backdrop-blur-lg top-0 fixed"  onClick={() => setShowModal(false)}>
                         <Modal onClose={() => setShowModal(false)} />
                     </div>,
                   document.body

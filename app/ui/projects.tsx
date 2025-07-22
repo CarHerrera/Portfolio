@@ -1,38 +1,23 @@
 import Link from 'next/link'
-const projects = [{
-    projName: "Drink and Food Recipe Site",
-    info: "This was one my final project for my Javascript and Web Applications course. The project was open ended but it must use at least one GET and POST request.\
-    I decided to make a recipe book site for both cocktails and food recipes. It would generate recipes based on the query by the user. For example if they wanted only\
-    drinks with rum, it would make a call to the cocktaildb and popualte results. I also allowed users to enter some ingredients that they had and it would also populate a table\
-    with recipes that could be made from those ingredients.",
+const projects = [
+  {
+    projName: "Co$t4Equality",
+    info: "This was a website that I created when I was working at iStrategyLabs. This was a summer internship that I secured and our goal was to create a website that talked about some\
+    problems that we felt passionate about at the time. There were 3 of us working on the webpage and each of us were focused on different aspects of the project. I was the main person that\
+    worked on the front end portions and the backend portions. This project was the project that made me want to pursue computer science as career while in Highschool.",
     date: "",
-    github:"https://github.com/CarHerrera/CMSC335Final",
-    skills:["Created and hosted a website using Node.js", 
-      "Used API calls to generate drinks and recipes for the user based on inputted filters",
-      "Used mongodb to store information about the user.",
-      "Used expressjs as the framework"],
-    img:"/cocktail.png",
-    height: 50,
-    width: 60,
-    id: 0
-  },
-{
-    projName: "Health App Project",
-    info: "This was a project that was created in a Human-Computer Interaction Course.\
-     This project was different to some of my others as we were not focusing on creating a functional app. Instead, the professor wanted to make an app that prioritized the user and their experiences.\
-     An added constraint was that it was meant to be designed on a 640x960 application and we could not use anything outside of the base HTML, CSS, and JS.\
-     With a group of 3 other classmates, we created this simulated mobile app and utilized everything we learned from class to make the app as appealing as possible. ",
-    date: "",
-    github:"https://github.com/CarHerrera/434-HealthApp",
-    skills:["Practiced using Github",
-      "Experience focusing on a good user experience",
-      "Practice HTML, CSS, JS"
+    github:"https://github.com/CarHerrera/Cost4EqualityNew",
+    skills:[
+      "Created a website using HTML, CSS, JS",
+      "Collaborated with other interns (Teamwork)",
+      "Django web Framework",
+      "Project Planning"
     ],
-    img:"null",
-    height: 50,
-    width: 50,
-    id: 1
-  }, 
+    img:"/C4ELogo.png",
+    height: 100,
+    width: 300,
+    id: 3
+  },
   {
     projName: "Discord Bot",
     info: "This was an application that I had created while I was at Montgomery College. I was looking for opportunities to practice and develop some of my python skills and found a library\
@@ -46,28 +31,49 @@ const projects = [{
       "Practiced my python skills"
     ],
     img:"/disc.png",
+    // <a href="https://www.freepnglogos.com/images/discord-logo-png-7617.html">Get it on discord logo logodownload download logotipos</a>
     height: 50,
-    width: 50,
+    width: 100,
     id: 2
   },
   {
-    projName: "Co$t4Equality",
-    info: "This was a website that I created when I was working at iStrategyLabs. This was a summer internship that I secured and our goal was to create a website that talked about some\
-    problems that we felt passionate about at the time. There were 3 of us working on the webpage and each of us were focused on different aspects of the project. I was the main person that\
-    worked on the front end portions and the backend portions. This project was the project that made me want to pursue computer science as career while in Highschool.",
+    projName: "Health App Project",
+    info: "This was a project that was created in a Human-Computer Interaction Course.\
+     This project was different to some of my others as we were not focusing on creating a functional app. Instead, the professor wanted to make an app that prioritized the user and their experiences.\
+     An added constraint was that it was meant to be designed on a 640x960 application and we could not use anything outside of the base HTML, CSS, and JS.\
+     With a group of 3 other classmates, we created this simulated mobile app and utilized everything we learned from class to make the app as appealing as possible. ",
     date: "",
-    github:"",
-    skills:[
-      "Created a website using HTML, CSS, JS",
-      "Collaborated with other interns (Teamwork)",
-      "Django web Framework",
-      "Project Planning"
+    github:"https://github.com/CarHerrera/434-HealthApp",
+    skills:["Practiced using Github",
+      "Experience focusing on a good user experience",
+      "Practice HTML, CSS, JS"
     ],
-    img:"null",
+    img:"/dumbbell.png",
+    // <a href="https://www.flaticon.com/free-icons/dumbbell" title="dumbbell icons">Dumbbell icons created by Freepik - Flaticon</a>
     height: 50,
     width: 50,
-    id: 3
+    id: 1
+  }, 
+  {
+    projName: "Drink and Food Recipe Site",
+    info: "This was one my final project for my Javascript and Web Applications course. The project was open ended but it must use at least one GET and POST request.\
+    I decided to make a recipe book site for both cocktails and food recipes. It would generate recipes based on the query by the user. For example if they wanted only\
+    drinks with rum, it would make a call to the cocktaildb and popualte results. I also allowed users to enter some ingredients that they had and it would also populate a table\
+    with recipes that could be made from those ingredients.",
+    date: "",
+    github:"https://github.com/CarHerrera/CMSC335Final",
+    skills:["Created and hosted a website using Node.js", 
+      "Used API calls to generate drinks and recipes for the user based on inputted filters",
+      "Used mongodb to store information about the user.",
+      "Used expressjs as the framework"],
+      
+    img:"/cocktail.png",
+    // <a href="https://www.flaticon.com/free-icons/cocktail" title="cocktail icons">Cocktail icons created by Freepik - Flaticon</a>
+    height: 50,
+    width: 60,
+    id: 0
   },
+
   {
     projName: "My Portfolio",
     info: "This website! I wanted to make a portfolio with a framework that had never been talked about in any of my classes. I landed on NextJs as it allowed me to practice\
@@ -78,7 +84,7 @@ const projects = [{
       "Next js Framework",
       "React components",
       "Typescript"],
-    img:"null",
+    img:"next.svg",
     height: 50,
     width: 50,
     id:4,
