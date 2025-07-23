@@ -69,7 +69,7 @@ export default function Page(){
       <p className="text-xl">{project.info}</p>
       <br/>
       <div className="relative flex bottom-1">
-        <img src="https://twenty-icons.com/github.com" className="bg-white rounded-full" width={48} height={32} alt="Github Logo"/>
+        <a className="ml-4 mt-5" target="_blank" href={project.github}><img src="https://twenty-icons.com/github.com" className="bg-white rounded-full" width={48} height={32} alt="Github Logo"/></a>
         <a className="ml-4 mt-5" target="_blank" href={project.github}>Github</a>
         <p className="flex-grow"></p>
         {project.id != 2   &&
