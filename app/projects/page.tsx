@@ -16,7 +16,7 @@ export default function Home() {
                     </p>
             </div>
             <div>
-                <img className="rounded-full mx-auto px-5 py-10" src={"/me.png"} />
+                <img className="rounded-full mx-auto px-5 py-10" src={"/portfolio/me.png"} />
             </div>
         </div>
         <Projects/>

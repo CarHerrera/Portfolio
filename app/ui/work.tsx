@@ -4,7 +4,7 @@ const jobs = [
         name:"University of Maryland Police Department, Security Operation Center",
         title:"Lead Security Monitor",
         time: "August 2023 - Present",
-        img: '/UMD_SEAL.png',
+        img: '/portfolio/UMD_SEAL.png',
         alt:"University of Maryland seal",
         loc:"College Park"
     },
@@ -13,7 +13,7 @@ const jobs = [
         name:"University of Maryland Police Department, Security Operation Center",
         title:"Security Monitor",
         time: "April 2022 - August 2023",
-        img: '/UMD_SEAL.png',
+        img: '/portfolio/UMD_SEAL.png',
         alt:"University of Maryland seal",
         loc:"College Park"
     },
@@ -22,7 +22,7 @@ const jobs = [
         name:"Latino Student Fund",
         time: "November 2018 - August 2019",
         title:"Intern",
-        img:"/LSF.png",
+        img:"/portfolio/LSF.png",
         alt: "Latino Student Fund logo",
         loc:"Washington D.C."
     },
@@ -31,7 +31,7 @@ const jobs = [
         name:"Urban Alliance",
         time:"September 2018 - August 2019",
         title:"Intern",
-        img:"/urban_alliance_logo.png",
+        img:"/portfolio/urban_alliance_logo.png",
         alt:"Urban Alliance Logo",
         loc:"Washington D.C."
     },
@@ -40,7 +40,7 @@ const jobs = [
         name:"ISL (iStrategyLabs)",
         time: "June 2018 - August 2018",
         title: "Developer Intern",
-        img:"/iSL.png",
+        img:"/portfolio/iSL.png",
         alt:"I Strategy Labs Logo",
         loc:"Washington D.C."
     }

@@ -4,7 +4,7 @@ const schools = [
         name:"University of Maryland",
         title:"Bachelor of Science in Computer Science",
         time: "Fall 2022 - Spring 2025",
-        img: '/UMD_SEAL.png',
+        img: '/portfolio/UMD_SEAL.png',
         alt:"University of Maryland seal"
     },
     {
@@ -12,7 +12,7 @@ const schools = [
         name:"Montgomery College",
         title:"Associate of Arts in Computer Science",
         time: "Fall 2019 - Spring 2022",
-        img:"/MC.png",
+        img:"/portfolio/MC.png",
         alt: "Montgomery College logo"
     },
     {
@@ -20,7 +20,7 @@ const schools = [
         name:"Wilson High School",
         time: "Fall 2015 - Spring 2019",
         title:"",
-        img:"/wilson.png",
+        img:"/portfolio/wilson.png",
         alt: "Wilson High School logo"
     }
 ];
