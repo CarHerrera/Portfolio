@@ -12,6 +12,7 @@
     "img":"/portfolio/C4ELogo.png",
     "height": 100,
     "width": 300,
+    "alt": "",
     "id": 3
   },
   {
@@ -28,6 +29,7 @@
     "cite":    "<a href='https://www.freepnglogos.com/images/discord-logo-png-7617.html'>Get it on discord logo logodownload download logotipos</a>",
     "height": 50,
     "width": 100,
+    "alt": "",
     "id": 2
   },
   {
@@ -43,6 +45,7 @@
     "cite": "<a href='https://www.flaticon.com/free-icons/dumbbell' title='dumbbell icons'>Dumbbell icons created by Freepik - Flaticon</a>",
     "height": 50,
     "width": 50,
+    "alt": "",
     "id": 1
   }, 
   {
@@ -59,6 +62,7 @@
     "cite": "<a href='https://www.flaticon.com/free-icons/cocktail' title='cocktail icons'>Cocktail icons created by Freepik - Flaticon</a>",
     "height": 50,
     "width": 60,
+    "alt": "",
     "id": 0
   },
 
@@ -74,5 +78,6 @@
     "img":"/portfolio/next.svg",
     "height": 50,
     "width": 50,
+    "alt": "",
     "id":4
   }]

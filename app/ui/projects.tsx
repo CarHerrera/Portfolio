@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import projectsJson from '../../public/projects.json';
+import Image from 'next/image';
 const projects = projectsJson;
 
 function BulletList({list}:{list:String[]}){
@@ -14,7 +15,7 @@ export default function Projects() {
   const gridItems = projects.map(project => 
     <div key ={project.id} className="bg-gray-500 m-8 p-5 rounded-lg">
       <div className="flex">
-        <img className="inline-block" src={project.img} height={project.height} width={project.width}></img>
+        <a href={project.github} target="_blank"><Image className="inline-block" src={project.img} height={project.height} width={project.width} alt={project.alt}/></a>
         <div><h2 className="text-3xl m-4">{project.projName}</h2></div>
       </div>
       <br/>
