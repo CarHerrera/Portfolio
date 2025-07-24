@@ -2,13 +2,15 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import { createPortal } from 'react-dom';
-import Modal from './modal'
+import Modal from './modal';
+import Image from 'next/image';
+import Dropdown from './dropdown'
 export default function Nav() {
   // ...
   const [showModal, setShowModal] = useState(false);
   return (
     <nav>
-        <div className="flex-row hidden grid grid-cols-2 bg-zinc-800 text-white md:flex">
+        <div className="hidden flex-row bg-zinc-800 text-white md:flex">
             <Link className="" href="/">
             <div className="hover:bg-blue-100 px-8 py-8">
                 Carlos Herrera
@@ -26,6 +28,15 @@ export default function Nav() {
                   <Link className="float-right px-8 py-8 hover:bg-blue-100" href="/projects">Projects</Link>
                   <Link className="float-right  px-8 py-8 hover:bg-blue-100" href="/experience">Experience</Link>
             </div>
+        </div>
+        <div className="md:hidden grid grid-cols-2 bg-zinc-800">
+            <Link className="" href="/">
+            <div className="hover:bg-blue-100 px-8 py-8 text-xl">
+                Carlos Herrera
+            </div></Link>
+            
+            <Dropdown></Dropdown>
+            
         </div>
     </nav>
     )

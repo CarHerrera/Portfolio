@@ -38,11 +38,13 @@ export default function Modal({onClose}:{onClose: undefined | MouseEventHandler}
         <button type="submit" className="block bg-red-800 rounded-full p-4 mx-auto mt-5">Submit</button>
       </form>
 
-      <p className="absolute text-2xl bottom-40 left-0 right-0 mx-auto size-fit block">Or reach out to me on any of these websites!</p>
-      <div className="absolute bottom-10 left-0 right-0 mx-auto size-fit flex flex-row gap-5">  
-        <a href="https://github.com/CarHerrera" target="_blank"><img src="https://twenty-icons.com/github.com" width={size} height={size} alt="Github Logo"/></a>
-        <a href="https://www.linkedin.com/in/carherr/" target="_blank"><img src="https://twenty-icons.com/linkedin.com" width={size} height={size} alt="Linkedin Logo"/></a>
-        <a href="https://portfolium.com/cherrer6" target="_blank"><img src="https://portfolium.com/assets/images/favicons/favicon.png" width={size} height={size} alt="Portfolium Logo"/></a>
+      <div className="absolute bottom-10 left-0 right-0 mx-auto size-fit flex flex-col gap-5">
+        <p>Or reach out to me on any of these platforms!</p>
+          <div className="absolute bottom-10 left-0 right-0 mx-auto size-fit flex flex-row gap-5">  
+            <a href="https://github.com/CarHerrera" target="_blank"><img src="https://twenty-icons.com/github.com" width={size} height={size} alt="Github Logo"/></a>
+            <a href="https://www.linkedin.com/in/carherr/" target="_blank"><img src="https://twenty-icons.com/linkedin.com" width={size} height={size} alt="Linkedin Logo"/></a>
+            <a href="https://portfolium.com/cherrer6" target="_blank"><img src="https://portfolium.com/assets/images/favicons/favicon.png" width={size} height={size} alt="Portfolium Logo"/></a>
+          </div>
       </div>
       
     </div>)
