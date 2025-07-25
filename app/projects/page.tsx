@@ -19,6 +19,24 @@ export default function Home() {
                 <Image className="rounded-full mx-auto px-5 py-10" src={"/portfolio/me.png"} alt="A picture of me" fill={true}/>
             </div>
         </div>
+
+        <div className="md:hidden text-white p-10 bg-gray-700">
+          <p className="text-xl text-center">Projects</p>
+          <br></br>
+          <img 
+          // sizes="(min-width:414px) w-1/4" 
+          className="m-3  rounded-full float-right h-auto w-3/5" 
+          src={"/portfolio/me.png"} 
+          alt="A picture of me"/>
+
+            <br></br>
+          <p className="text-md">This page showcases some of the work that I am most proud of. 
+            Each of these projects came with their own set of challenges and I am proud for overcoming each and every one of them. These projects helped me hone some of my skills and they made a stronger and more confident developer.
+            <br></br>
+            <br></br>
+            Feel free to take a look at each one!
+            </p>
+        </div>
         <Projects/>
     </div>
   );

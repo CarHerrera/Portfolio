@@ -1,14 +1,21 @@
 'use client'
 import Link from 'next/link';
-import { useState } from 'react';
+import { useState, useRef, useEffect} from 'react';
 import { createPortal } from 'react-dom';
 import Modal from './modal';
 import Image from 'next/image';
 import Dropdown from './dropdown'
 export default function Nav() {
   // ...
+  const [height, setHeight] = useState(0);
   const [showModal, setShowModal] = useState(false);
-  return (
+  const refCont = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    if (refCont.current) {
+            setHeight(refCont.current.clientHeight);
+        }
+    }, []);
+    return (
     <nav>
         <div className="hidden flex-row bg-zinc-800 text-white md:flex">
             <Link className="" href="/">
@@ -29,13 +36,13 @@ export default function Nav() {
                   <Link className="float-right  px-8 py-8 hover:bg-blue-100" href="/experience">Experience</Link>
             </div>
         </div>
-        <div className="md:hidden grid grid-cols-2 bg-zinc-800">
+        <div ref={refCont} id="navBar"  className="md:hidden grid grid-cols-2 bg-zinc-800">
             <Link className="" href="/">
             <div className="hover:bg-blue-100 px-8 py-8 text-xl">
                 Carlos Herrera
             </div></Link>
             
-            <Dropdown></Dropdown>
+            <Dropdown divHeight={height}></Dropdown>
             
         </div>
     </nav>

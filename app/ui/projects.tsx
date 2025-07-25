@@ -34,7 +34,7 @@ export default function Projects() {
   )
   // ...
   return (<>
-    <div className="hidden bg-black text-white md:grid">
+    <div className="bg-black text-white md:grid">
     
         {gridItems}
     </div>

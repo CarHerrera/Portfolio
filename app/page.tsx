@@ -62,6 +62,30 @@ export default function Page(){
     
         {gridItems}
         </div>
+
+        <div className="md:hidden text-white p-10 bg-gray-700">
+          <p className="text-xl text-center">Hi! I am Carlos Herrera. </p>
+          <br></br>
+          <img 
+          // sizes="(min-width:414px) w-1/4" 
+          className="m-3  rounded-full float-right h-auto w-3/5" 
+          src={"/portfolio/me.png"} 
+          alt="A picture of me"/>
+          <p className="text-md"> 
+            I am a graduate of the University of Maryland with a strong interest in full-stack devlopment. I have experience working front-end frameworks like react, and have experiencce working with back-end technology such as Node.js, Express, and SQL/NOSQL databases.
+            I am looking for opportunities to improve my software devlopment skills and contribute to collaborative engineering teams. 
+                    
+
+          <br></br>
+          <br></br>
+          This is my portfolio site! I will be adding some of the proejcts that I've worked on throughout my academic career.
+              Feel free to look through it and check back occasionally as I update it with new work.
+          </p>
+        </div>
+        <div className="bg-black text-white md:hidden">
+    
+        {gridItems}
+        </div>
     </div>
 
     );
