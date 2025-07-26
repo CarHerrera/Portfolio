@@ -23,7 +23,7 @@ export default function Page(){
         <a className="ml-4 mt-5" target="_blank" href={project.github}>Github</a>
         <p className="flex-grow"></p>
         {project.id != 2   &&
-            <a className="mr-4 mt-5" target="_blank">Live site</a>
+            <a className="mr-4 mt-5" target="_blank" href={project.link}>Live site</a>
         }
 
 
