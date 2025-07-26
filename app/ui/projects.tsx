@@ -28,7 +28,7 @@ export default function Projects() {
       <div className="flex">
         <a className="ml-4" href={project.github}>Github</a>
         <p className="flex-grow"></p>
-        <a className="mr-4">Live site</a>
+        <a className="mr-4" href={project.link}> Live site</a>
       </div>
     </div>
   )

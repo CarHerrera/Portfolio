@@ -13,6 +13,7 @@
     "height": 100,
     "width": 300,
     "alt": "",
+    "link":"",
     "id": 3
   },
   {
@@ -30,6 +31,7 @@
     "height": 50,
     "width": 100,
     "alt": "",
+    "link":"",
     "id": 2
   },
   {
@@ -46,6 +48,7 @@
     "height": 50,
     "width": 50,
     "alt": "",
+    "link":"https://herrerashub.com/healthapp/",
     "id": 1
   }, 
   {
@@ -63,6 +66,7 @@
     "height": 50,
     "width": 60,
     "alt": "",
+    "link":"https://herrerashub.com/recipeGenerator/",
     "id": 0
   },
 
@@ -79,5 +83,6 @@
     "height": 50,
     "width": 50,
     "alt": "",
+    "link":"https://herrerashub.com/portfolio/",
     "id":4
   }]
