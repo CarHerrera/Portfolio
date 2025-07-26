@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import jobsJson from "../../public/jobs.json";
 const schools = [
     {
         id:0,
@@ -6,7 +7,8 @@ const schools = [
         title:"Bachelor of Science in Computer Science",
         time: "Fall 2022 - Spring 2025",
         img: '/portfolio/UMD_SEAL.png',
-        alt:"University of Maryland seal"
+        alt:"University of Maryland seal",
+        loc:""
     },
     {
         id:1,
@@ -14,7 +16,8 @@ const schools = [
         title:"Associate of Arts in Computer Science",
         time: "Fall 2019 - Spring 2022",
         img:"/portfolio/MC.png",
-        alt: "Montgomery College logo"
+        alt: "Montgomery College logo",
+        loc:""
     },
     {
         id:2,
@@ -22,58 +25,88 @@ const schools = [
         time: "Fall 2015 - Spring 2019",
         title:"",
         img:"/portfolio/wilson.png",
-        alt: "Wilson High School logo"
+        alt: "Wilson High School logo",
+        loc:""
     }
 ];
 
-// TODO make the lines touch automatically
 
-export default function Timeline({size}:{size:number}) {
+// TODO make the lines touch automatically
+function Line(){
+  return(
+    <div className={`min-h-full h-full ml-4.5 border-gray-50 border-l-3`}></div>
+  )
+}
+
+function Circle(){
+  return (<div className={`items-baseline w-10 h-10 bg-gray-200 rounded-full border border-white dark:border-gray-900 dark:bg-gray-700`}></div>)
+}
+interface TimelineTypes {
+  version:number,
+  size:number
+}
+export default function Timeline({version,size}:TimelineTypes) {
   // ...
-  const listItems = schools.map(school => 
-    <li  key={school.id} className="">
+  const objects = version == 0 ? schools : jobsJson;
+  const listItems = objects.map(obj => 
+    <div  key={obj.id} className="">
         <div className="md:flex bl-4 mt-4 hidden">
+          <div>
           {/* These are the borders */}
-          { school.id != (schools.length-1) &&
-              <div className="absolute mt-10 left-33.5 border-gray-50 border-l-3 h-45"></div>
+          <Circle />
+          { obj.id != (objects.length-1) &&
+            <Line />
           }
           {/* This is the dot */}
-          <div className="ml-30 absolute w-10 h-10 bg-gray-200 rounded-full mt-6.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-
-          {/* Image obviously */}
-          <Image className ="rounded-full ml-15" src={school.img} width={size} height={size} alt={school.alt}/>
-    
-          {/* Text about the school */}
-          <div className="mt-4 ml-7">
-            <p className="text-2xl">{school.name}</p>
-            <p className="text-2xl">{school.title}</p>
+            
           </div>
-          <div className="flex-grow"></div>
-          <div className="text-2xl mt-4">{school.time}</div>
+          {/* Image obviously */}
+
+          
+            <Image className ="rounded-full ml-15" src={obj.img} width={size} height={size} alt={obj.alt}/>
+    
+          {/* Text about the obj */}
+          <div className="mt-4 ml-7">
+              <p className="text-2xl">{obj.name}</p>
+              <p className="text-2xl">{obj.title}</p>
+            </div>
+            <div className="flex-grow"></div>
+            <div className="mt-4">
+                    <p className="text-2xl">{obj.time}</p>
+                    <p className="text-2xl text-right">{obj.loc}</p>
+              </div>
           
         </div>
 
-        <div className=" bl-4 mt-4 md:hidden">
-          { school.id != (schools.length-1) &&
-              <div className="absolute mt-10 left-[5vw] border-gray-50 border-l-3 h-[35vh]"></div>
+        <div className="flex flex-row  md:hidden">
+
+          <div>
+             <Circle />
+          { obj.id != (objects.length-1) &&
+              //  <Line left={mobile.lineLeft} top={mobile.lineTop} height={mobile.lineHeight}></Line>    
+              <div className="h-full ml-4.5 border-gray-50 border-l-3"></div>
+
           }
-          
-          <div className="ml-[3vw] absolute w-10 h-10 bg-gray-200 rounded-full mt-6.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-
-
-          <Image className ="rounded-full ml-10" src={school.img} width={size} height={size} alt={school.alt}/>
-    
-          <div className="mt-4 ml-7">
-            <p className="text-xl">{school.name}</p>
-            <p className="text-xl">{school.title}</p>
-            <p className="text-xl">{school.time}</p>
+            
           </div>
+
+          <div className="flex-col">
+              <Image className ="rounded-full ml-10" src={obj.img} width={size} height={size} alt={obj.alt}/>
+    
+              <div className="mt-4 ml-7">
+                <p className="text-lg">{obj.name}</p>
+                <p className="text-lg">{obj.title}</p>
+                <p className="text-lg">{obj.time}</p>
+                <p className="text-lg">{obj.loc}</p>
+              </div>
+          </div>
+          
           {/* <div className="text-2xl mt-4">{school.time}</div> */}
           
         </div>
-      </li>
+      </div>
     
             
   );
-  return <ul>{listItems}</ul>
+  return <div className="grid auto-rows-fr m-4 gap-2" >{listItems}</div>
 }

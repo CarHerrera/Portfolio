@@ -2,6 +2,7 @@ import Image from "next/image";
 import Timeline from '../ui/edu';
 import History from '../ui/work';
 
+
 export default function Home() {
   return (
     <div>
@@ -10,14 +11,14 @@ export default function Home() {
 
           <br></br>
 
-          <Timeline size={175}/>
+          <Timeline size={175} version={0} />
           <br></br>
           <br></br>
           <hr></hr>
           <br></br>
           <br></br>
           <h1 className="text-5xl">Profession Experience</h1>
-          <History/>
+          <Timeline size={175} version={1} />
         </div>
 
         <div className="md:hidden m-5">
@@ -25,14 +26,15 @@ export default function Home() {
 
           <br></br>
 
-          <Timeline size={75}/>
+          <Timeline size={75} version={0}/>
           <br></br>
           <br></br>
           <hr></hr>
           <br></br>
           <br></br>
-          <h1 className="text-5xl">Profession Experience</h1>
-          <History/>
+          <h1 className="text-2xl">Professional Experience</h1>
+          <Timeline size={75} version={1}/>
+          {/* <History/> */}
         </div>
     </div>
   );
