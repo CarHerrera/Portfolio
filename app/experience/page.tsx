@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Timeline from '../ui/edu';
-import History from '../ui/work';
+import Timeline from '../ui/timeline';
+// import History from '../ui/work';
 
 
 export default function Home() {

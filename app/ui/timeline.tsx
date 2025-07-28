@@ -50,20 +50,17 @@ export default function Timeline({version,size}:TimelineTypes) {
   const objects = version == 0 ? schools : jobsJson;
   const listItems = objects.map(obj => 
     <div  key={obj.id} className="">
-        <div className="md:flex bl-4 mt-4 hidden">
+        <div className="h-full md:flex bl-4 mt-4 hidden">
           <div>
-          {/* These are the borders */}
           <Circle />
           { obj.id != (objects.length-1) &&
             <Line />
           }
-          {/* This is the dot */}
             
           </div>
-          {/* Image obviously */}
 
           
-            <Image className ="rounded-full ml-15" src={obj.img} width={size} height={size} alt={obj.alt}/>
+          <Image className ="rounded-full ml-15" src={obj.img} width={size} height={size} alt={obj.alt}/>
     
           {/* Text about the obj */}
           <div className="mt-4 ml-7">
@@ -78,7 +75,7 @@ export default function Timeline({version,size}:TimelineTypes) {
           
         </div>
 
-        <div className="flex flex-row  md:hidden">
+        <div className="flex flex-row h-full md:hidden">
 
           <div>
              <Circle />

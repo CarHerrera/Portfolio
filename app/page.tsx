@@ -1,6 +1,6 @@
 import projectsJson from '../public/projects.json';
 import Image from 'next/image';
-const projects = projectsJson;
+const projects = [projectsJson[0], projectsJson[1], projectsJson[2], projectsJson[3]];
 function BulletList({list}:{list:String[]}){
   const listItems = list.map(item =>
     <li className="pl-5 text-lg0" key={list.indexOf(item)}>{item}</li>
