@@ -41,9 +41,7 @@ export default function Nav() {
             <div className="hover:bg-blue-100 px-8 py-8 text-xl">
                 Carlos Herrera
             </div></Link>
-            
             <Dropdown divHeight={height}></Dropdown>
-            
         </div>
     </nav>
     )
