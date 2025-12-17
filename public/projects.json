@@ -13,7 +13,7 @@
     "height": 100,
     "width": 300,
     "alt": "",
-    "link":"",
+    "link":"https://herrerashub.com/Cost4Equality/",
     "id": 3
   },
   {
@@ -53,7 +53,7 @@
   }, 
   {
     "projName": "Drink and Food Recipe Site",
-    "info": "This was one my final project for my Javascript and Web Applications course. The project was open ended but it must use at least one GET and POST request. I decided to make a recipe book site for both cocktails and food recipes. It would generate recipes based on the query by the user. For example if they wanted only drinks with rum, it would make a call to the cocktaildb and popualte results. I also allowed users to enter some ingredients that they had and it would also populate a table with recipes that could be made from those ingredients.",
+    "info": "This was one my final project for my Javascript and Web Applications course. The project was open ended but it must use at least one GET and POST request. I decided to make a recipe book site for both cocktails and food recipes. It would generate recipes based on the query by the user. For example if they wanted only drinks with rum, it would make a call to the cocktaildb and popualte results. Although I submitted this as a project, I was dissastified with my work and felt that it could use an overhaul. I have been working to improve the website's design and have been working to make sure it has all the features which I had originally envisioned.",
     "date": "",
     "github":"https://github.com/CarHerrera/CMSC335Final",
     "skills":["Created and hosted a website using Node.js", 
@@ -66,7 +66,7 @@
     "height": 50,
     "width": 60,
     "alt": "",
-    "link":"https://herrerashub.com/recipeGenerator/",
+    "link":"",
     "id": 0
   },
 
@@ -85,4 +85,22 @@
     "alt": "",
     "link":"https://herrerashub.com/portfolio/",
     "id":4
-  }]
+  }, {
+    "projName": "Perlite Vite",
+    "info": "This was a project that I started due to wanting to share my notes online. I had been using the app Obsidian to take my notes on various subjects, and I wanted an easy method to share my notes without having my friends download a new application. Out of the box perlite was able to achieve most of the things that I wanted from it, however it was lacking some plugin features that I used. This project was my solution to that problem and I have been working on it to have all the features that it has in the app. I have set it to showcase the orignal Perlite Demo and my addition using React and Vite.",
+    "date": "",
+    "github":"https://github.com/CarHerrera/Portfolio",
+    "skills":[
+      "PHP",
+      "React components",
+      "Typescript"
+    ],
+    "img":"/portfolio/perlite.svg",
+    "height": 50,
+    "width": 50,
+    "alt": "",
+    "link":"https://herrerashub.com/PerliteVite/",
+    "id":4
+  }
+
+]
