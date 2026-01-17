@@ -1,7 +1,7 @@
   [{
     "projName": "Co$t4Equality",
     "info": "This was a website that I created when I was working at iStrategyLabs. This was a summer internship that I secured and our goal was to create a website that talked about some problems that we felt passionate about at the time. There were 3 of us working on the webpage and each of us were focused on different aspects of the project. I was the main person that worked on the front end portions and the backend portions. This project was the project that made me want to pursue computer science as career while in Highschool.",
-    "date": "",
+    "date": "08/2018",
     "github":"https://github.com/CarHerrera/Cost4EqualityNew",
     "skills":[
       "Created a website using HTML, CSS, JS",
@@ -10,16 +10,16 @@
       "Project Planning"
     ],
     "img":"/portfolio/C4ELogo.png",
-    "height": 100,
-    "width": 300,
-    "alt": "",
+    "height": 50,
+    "width": 100,
+    "alt": "Cost 4 Equality Logo",
     "link":"https://herrerashub.com/Cost4Equality/",
     "id": 3
   },
   {
     "projName": "Discord Bot",
     "info": "This was an application that I had created while I was at Montgomery College. I was looking for opportunities to practice and develop some of my python skills and found a library that gave me the tools to create a discord bot. After intializing the bot and adding some base commands, I started to add some custom commands. I added the ability for the bot to randomly respond to user messages, allowed it to play soundbytes, and created a social currency system that correlated with the user activity on the server.",
-    "date": "",
+    "date": "01/2021",
     "github":"https://github.com/CarHerrera/DiscordJesusBot",
     "skills":[
       "Made API calls to discord via the discord.py library",
@@ -30,14 +30,14 @@
     "cite":    "<a href='https://www.freepnglogos.com/images/discord-logo-png-7617.html'>Get it on discord logo logodownload download logotipos</a>",
     "height": 50,
     "width": 100,
-    "alt": "",
+    "alt": "Discord Logo",
     "link":"",
     "id": 2
   },
   {
     "projName": "Health App Project",
     "info": "This was a project that was created in a Human-Computer Interaction Course. This project was different to some of my others as we were not focusing on creating a functional app. Instead, the professor wanted to make an app that prioritized the user and their experiences. An added constraint was that it was meant to be designed on a 640x960 application and we could not use anything outside of the base HTML, CSS, and JS. With a group of 3 other classmates, we created this simulated mobile app and utilized everything we learned from class to make the app as appealing as possible. ",
-    "date": "",
+    "date": "05/2023",
     "github":"https://github.com/CarHerrera/434-HealthApp",
     "skills":["Practiced using Github",
       "Experience focusing on a good user experience",
@@ -53,13 +53,14 @@
   }, 
   {
     "projName": "Drink and Food Recipe Site",
-    "info": "This was one my final project for my Javascript and Web Applications course. The project was open ended but it must use at least one GET and POST request. I decided to make a recipe book site for both cocktails and food recipes. It would generate recipes based on the query by the user. For example if they wanted only drinks with rum, it would make a call to the cocktaildb and popualte results. Although I submitted this as a project, I was dissastified with my work and felt that it could use an overhaul. I have been working to improve the website's design and have been working to make sure it has all the features which I had originally envisioned.",
-    "date": "",
+    "info": "This was one my final project for my Javascript and Web Applications course. The project was open ended but it must use at least one GET and POST request. I decided to make a recipe book site for both cocktails and food recipes. It would generate recipes based on the query by the user. For example if they wanted only drinks with rum, it would make a call to the cocktaildb and popualte results. Although I submitted this as a project, I was dissastified with my work and felt that it could use an overhaul. I am currently working to improve the website's design and to make sure it has all the features which I had originally envisioned. Some Features that I want to add in the future are custom accounts, custom allergies, and add improvements to the UI. I have taken it offline to ensure that it can be in good state once it is back online.",
+    "date": "05/2024",
     "github":"https://github.com/CarHerrera/CMSC335Final",
     "skills":["Created and hosted a website using Node.js", 
       "Used API calls to generate drinks and recipes for the user based on inputted filters",
       "Used mongodb to store information about the user.",
-      "Used expressjs as the framework"],
+      "Used expressjs as the framework",
+      "Used Tailwind to design the ejs templates."],
       
     "img":"/portfolio/cocktail.png",
     "cite": "<a href='https://www.flaticon.com/free-icons/cocktail' title='cocktail icons'>Cocktail icons created by Freepik - Flaticon</a>",
@@ -73,7 +74,7 @@
   {
     "projName": "My Portfolio",
     "info": "This website! I wanted to make a portfolio with a framework that had never been talked about in any of my classes. I landed on NextJs as it allowed me to practice my typescript, and gave me the opportunity to work with other frameworks like TailwindCSS and React.",
-    "date": "",
+    "date": "06/2025",
     "github":"https://github.com/CarHerrera/Portfolio",
     "skills":[
       "Next js Framework",
@@ -88,19 +89,20 @@
   }, {
     "projName": "Perlite Vite",
     "info": "This was a project that I started due to wanting to share my notes online. I had been using the app Obsidian to take my notes on various subjects, and I wanted an easy method to share my notes without having my friends download a new application. Out of the box perlite was able to achieve most of the things that I wanted from it, however it was lacking some plugin features that I used. This project was my solution to that problem and I have been working on it to have all the features that it has in the app. I have set it to showcase the orignal Perlite Demo and my addition using React and Vite.",
-    "date": "",
+    "date": "08/2025",
     "github":"https://github.com/CarHerrera/Portfolio",
     "skills":[
-      "PHP",
-      "React components",
-      "Typescript"
+      "PHP was used as a backend for the excalidraw and bases. I would make calls to the PHP to return the needed output which React would use to populate the page.",
+      "React components were used to popualate the Bases and Excalidraw that are found on the website.",
+      "Typescript was the main language used across the react components",
+      "Rust was used to parse all the notes and add them into a sqlite file."
     ],
     "img":"/portfolio/perlite.svg",
     "height": 50,
     "width": 50,
     "alt": "",
     "link":"https://herrerashub.com/PerliteVite/",
-    "id":4
+    "id":5
   }
 
 ]

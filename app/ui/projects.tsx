@@ -14,9 +14,10 @@ export default function Projects() {
   const size = 60;
   const gridItems = projects.map(project => 
     <div key ={project.id} className="bg-gray-500 m-8 p-5 rounded-lg">
-      <div className="flex">
-        <a href={project.github} target="_blank"><Image className="inline-block" src={project.img} height={project.height} width={project.width} alt={project.alt}/></a>
-        <div><h2 className="text-3xl m-4">{project.projName}</h2></div>
+      <div className="flex relative items-center">
+        <a href={project.github} target="_blank"><Image className="inline-block height-auto" style={{objectFit:"contain"}} src={project.img} height={project.height} width={project.width} alt={project.alt}/></a>
+        <div><h2 className="text-xl md:text-3xl m-4">{project.projName}</h2></div>
+        <div className="m-4 md:absolute md:right-0">{project.date}</div>
       </div>
       <br/>
       <p className="text-xl">{project.info}</p>
