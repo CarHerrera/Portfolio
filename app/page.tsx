@@ -1,18 +1,12 @@
 import projectsJson from '../public/projects.json';
 import Image from 'next/image';
 const projects = [projectsJson[0], projectsJson[1], projectsJson[2], projectsJson[3]];
-function BulletList({list}:{list:String[]}){
-  const listItems = list.map(item =>
-    <li className="pl-5 text-lg0" key={list.indexOf(item)}>{item}</li>
-  )
-  return (<ul className="list-disc mt-5 mb-10 pl-5">{listItems}</ul>);
-}
 
 export default function Page(){
     const gridItems = projects.map(project => 
     <div key ={project.id} className="bg-gray-500 m-8 p-5 rounded-lg">
       <div className="flex relative items-center">
-        <a href={project.github} target="_blank"><Image inline-block="height-auto" style={{objectFit:"contain"}} src={project.img} height={project.height} width={project.width} alt={project.alt}/></a>
+        {project.img ? <a href={project.github} target="_blank"><Image inline-block="height-auto" style={{objectFit:"contain"}} src={project.img} height={project.height} width={project.width} alt={project.alt}/></a> : "" }
         <div><h2 className="text-xl md:text-3xl m-4">{project.projName}</h2></div>
         <div className="m-4 md:absolute md:right-0">{project.date}</div>
       </div>
