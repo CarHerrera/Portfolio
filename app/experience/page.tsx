@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Timeline from '../ui/timeline';
+import Timeline from '../components/timeline';
 // import History from '../ui/work';
 
 

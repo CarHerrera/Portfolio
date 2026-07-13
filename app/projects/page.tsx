@@ -1,5 +1,7 @@
+"use client"
 import Image from "next/image";
-import Projects from "../ui/projects";
+import Projects from "../components/projects";
+
 export default function Home() {
   return (
     <div>

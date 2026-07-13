@@ -67,7 +67,7 @@
     "height": 50,
     "width": 60,
     "alt": "",
-    "link":"",
+    "link":"https://herrerashub.com/RecipeGenerator/",
     "id": 0
   },
 
@@ -103,6 +103,27 @@
     "alt": "",
     "link":"https://herrerashub.com/PerliteVite/",
     "id":5
+  },
+  {
+    "projName": "GoCs",
+    "info": "GoCs is an ongoing project built to give teams a single place to track match stats, review 2D gameplay, and share notes. I found that while sharing notes with my teammates, I was juggling too many different apps to keep everything in sync; so I wanted a central hub where I could see it all in one place. I started it as a way to learn Go from scratch and sharpen my TypeScript skills while building something genuinely useful for competitive play. Planned next steps include collaborative tools for the whiteboard and 2D playback so teams can review together in real time, GIF exports of key rounds for easy sharing, and machine learning-driven stat analysis trained on professional match demos to give teams pro-level benchmarks to compare against. Also the name is a work in progress.",
+    "date": "03/2026",
+    "github":"https://github.com/CarHerrera/Portfolio",
+    "skills":[
+      "Architected the backend using GoFiber (Go), designing RESTful endpoints to serve match and player data to the frontend",
+      "Built the frontend in React, creating a responsive interface for browsing team stats and match history",
+      "Developed a custom parser for CS2 .dem files, extracting raw in-game event data for downstream analysis and playback",
+      "Implemented 2D match playback by piping parsed replay data through endpoints consumed by the Konva rendering library",
+      "Containerized the application with Docker and integrated MariaDB for persistent, structured data storage",
+      "Implemented Steam OAuth2 authentication, syncing authenticated user profiles into the SQL database",
+      "Designed relational database schemas for users, teams, and stats, and built frontend forms enabling users to submit and update team/game data"
+    ],
+    "img":null,
+    "height": 50,
+    "width": 50,
+    "alt": "",
+    "link":"https://github.com/CarHerrera/GoCs",
+    "id":6
   }
 
 ]
