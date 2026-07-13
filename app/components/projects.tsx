@@ -7,7 +7,7 @@ const GoCs: GalleryItem[] = [
   { src: "/portfolio/Main page.png", alt: "2D round playback view", caption: "2D round playback — powered by Konva", type: "image" },
   { src: "/portfolio/player page.png", alt: "Player Stats page", caption: "Player Page", type: "image" },
   { src: "/portfolio/Team Page.png", alt: "Team stats dashboard", caption: "Team stats dashboard", type: "image" },
-  { src: "/portfolio/Playback page.png", alt: "2D playback", caption: "An image in the middle of a round with live utility and health bars.", type: "image" },
+  { src: "/portfolio/playback.png", alt: "2D playback", caption: "An image in the middle of a round with live utility and health bars.", type: "image" },
 ];
 function BulletList({list}:{list:String[]}){
   const listItems = list.map(item =>
